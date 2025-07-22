@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic"; // <-- Add this line!
+
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
 
@@ -31,7 +33,6 @@ export async function POST(req: Request) {
   }
 }
 
-// ✅ Add this for testing in browser
 export async function GET() {
   return NextResponse.json({
     message: "GET is working. Your route is set up correctly.",
