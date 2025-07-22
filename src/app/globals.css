@@ -24,3 +24,59 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+p,
+a {
+  color: #293038;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Ubuntu;
+  font-weight: 400;
+  color: #14311d;
+}
+
+button {
+  cursor: pointer;
+}
+
+.ubuntu {
+  font-family: Ubuntu;
+}
+
+.btn {
+  @apply rounded-full py-6 px-8;
+}
+
+.btn-small {
+  @apply rounded-full py-2 px-4;
+}
+
+.btn-primary {
+  background-color: #6d9773;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #4f7354;
+  color: white;
+}
+
+#hero {
+  background-image: url(/images/hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.pasos-img {
+  background-image: url(/images/pasos.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
