@@ -55,7 +55,7 @@ export default function RegistrationForm() {
   return (
     <div className="flex flex-col md:flex-row gap-6">
       <Stepper totalSteps={5} currentStep={step} />
-      <div className="flex-1">
+      <div className="flex-1 bg-white">
         {step === 0 && (
           <StepOne nextStep={nextStep} updateFormData={updateFormData} />
         )}
