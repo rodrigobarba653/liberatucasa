@@ -23,21 +23,21 @@ export async function POST(req: Request) {
     <p><strong>Estado:</strong> ${formData.state || "-"}</p>
 
     <h3>Características</h3>
-    <p><strong>Metros construcción:</strong> ${formData.constructionMeters || "-"}</p>
-    <p><strong>Metros terreno:</strong> ${formData.landMeters || "-"}</p>
+    <p><strong>Metros construcción:</strong> ${formData.constructionSize || "-"}</p>
+    <p><strong>Metros terreno:</strong> ${formData.landSize || "-"}</p>
     <p><strong>Recámaras:</strong> ${formData.bedrooms || "-"}</p>
     <p><strong>Baños:</strong> ${formData.bathrooms || "-"}</p>
     <p><strong>Niveles:</strong> ${formData.levels || "-"}</p>
 
     <h3>Adeudos</h3>
-    <p><strong>Infonavit/Banco:</strong> ${formData.debtBank || "No tiene adeudos"}</p>
-    <p><strong>Monto:</strong> ${formData.debtBankAmount ? `$${formData.debtBankAmount}` : "-"}</p>
-    <p><strong>Predial:</strong> ${formData.debtPredial || "No tiene adeudos"}</p>
-    <p><strong>Monto:</strong> ${formData.debtPredialAmount ? `$${formData.debtPredialAmount}` : "-"}</p>
-    <p><strong>Luz:</strong> ${formData.debtLuz || "No tiene adeudos"}</p>
-    <p><strong>Monto:</strong> ${formData.debtLuzAmount ? `$${formData.debtLuzAmount}` : "-"}</p>
-    <p><strong>Agua:</strong> ${formData.debtAgua || "No tiene adeudos"}</p>
-    <p><strong>Monto:</strong> ${formData.debtAguaAmount ? `$${formData.debtAguaAmount}` : "-"}</p>
+    <p><strong>Infonavit/Banco:</strong> ${formData.mortgageDebt || "No tiene adeudos"}</p>
+    <p><strong>Monto:</strong> ${formData.mortgageAmount ? `$${formData.mortgageAmount}` : "-"}</p>
+    <p><strong>Predial:</strong> ${formData.propertyTaxDebt || "No tiene adeudos"}</p>
+    <p><strong>Monto:</strong> ${formData.propertyTaxAmount ? `$${formData.propertyTaxAmount}` : "-"}</p>
+    <p><strong>Luz:</strong> ${formData.electricityDebt || "No tiene adeudos"}</p>
+    <p><strong>Monto:</strong> ${formData.electricityAmount ? `$${formData.electricityAmount}` : "-"}</p>
+    <p><strong>Agua:</strong> ${formData.waterDebt || "No tiene adeudos"}</p>
+    <p><strong>Monto:</strong> ${formData.waterAmount ? `$${formData.waterAmount}` : "-"}</p>
 
     <h3>Historial</h3>
     <p><strong>Motivo de liberación:</strong> ${formData.reason || "-"}</p>
