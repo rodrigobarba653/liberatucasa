@@ -46,6 +46,10 @@ button {
   cursor: pointer;
 }
 
+input {
+  color: #171717;
+}
+
 .ubuntu {
   font-family: Ubuntu;
 }
