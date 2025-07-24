@@ -26,7 +26,8 @@ body {
 }
 
 p,
-a {
+a,
+label {
   color: #293038;
 }
 
